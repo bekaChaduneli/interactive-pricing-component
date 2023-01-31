@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <div class = "logo">
+    <svg class = "logo-background" xmlns="http://www.w3.org/2000/svg" width="146" height="145"><g fill="none" fill-rule="evenodd" stroke="#CFD8EF"><circle cx="63" cy="82" r="62.5"/><circle cx="105" cy="41" r="40.5"/></g></svg>
+    <h1 class = "logo-headline">Simple, traffic-based pricing</h1>
+    <h2 class = "logo-text">Sign-up for our 30-day trial. No credit card required. </h2>
+  </div>
+  <form class="pricing-card" action="">
+  <!-- centering div centers the container because the body element didn't have display: flex -->
+  <div class = "centering">
+    <div class = "conteiner">
+      <div class = "first-box">
+        <span class = "first-box-headline"><span id="pageviews"></span>100K PAGEVIEWS</span>
+        <span class = "container__pricing--slider"><input class = "range-input" type = "range" id = "first-box-input" name="points" min = "8" max = "24" step = "4" value = "16"></span>
+        
+        <div class = "first-box-pricing-card">
+          <span class = "first-box-pricing-card-price">$16.00</span>
+          <span class = "first-box-pricing-card-month">/ month</span>
+        </div>
+      </div>
+      <label class = "second-box">
+        <span class = "second-box-text">Monthly Billing</span>
+        <input type = "checkbox" name="billing-freq" id="billing-freq">
+        <div class="toggle">
+          <span class="toggle-circle"></span>
+        </div>
+        <span class="second-box-second-text">
+          Yearly Billing
+        </span>
+        <span class = "discount-box">
+          <span class = "discount-text">
+            -25%
+          </span>
+        </span>
+        <span class = "desktop-discount-box">
+          <span class = "desktop-discount-text">
+            25% discount
+          </span>
+        </span>
+      </label>
+        <div class = "last-box-conteiner">
+          <span class = "last-box-conteiner-text">
+            <span>
+                <svg class = "one-line-image" xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+              <span class = "one-line-text">Unlimited websites</span>
+            </span>
+            <span>
+                <svg class = "one-line-image" xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+              <span class = "one-line-text">100% data ownership </span>
+            </span>
+            <span>
+                <svg class = "one-line-image" xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+              <span class = "one-line-text">Email reports</span>
+            </span>
+          </span>
+          <button type="submit" class = "submit-button">
+            Start my trial
+          </button>
+        </div>
+    </div>
+  </div>
+</form>
+<script src="script.js"> </script>
+</body>
+</html>
